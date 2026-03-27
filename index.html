@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Luciano Paiva – Especialidade no Gerenciamento e Controle do Setor de Almoxarifado.">
+    <title>Luciano Paiva | Almoxarifado &amp; Otimização Operacional/Produtiva</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para ícones premium -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Chart.js para gráficos interativos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+      
+        :root {
+            --tw-color-beige: #f4ede4;
+            --tw-color-terracotta: #e07a5f;
+            --tw-color-burnt: #c55c3a;
+            --tw-color-suede: #b8a68e;
+        }
+      
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+      
+        .hero-bg {
+            background: linear-gradient(135deg, #f4ede4 0%, #e8d9c8 100%);
+        }
+      
+        .section-header {
+            font-family: 'Playfair Display', sans-serif;
+        }
+      
+        .glass {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+        }
+      
+        .rounded-3xl {
+            border-radius: 1.5rem;
+        }
+      
+        .floating-button {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#f4ede4] text-[#2c211b] font-sans">
+    <!-- NAVBAR ULTRA-MODERNA -->
+    <nav class="glass sticky top-0 z-50 border-b border-[#e8d9c8]/50">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <!-- Logo / Nome -->
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 rounded-2xl bg-[#c55c3a] flex items-center justify-center text-white font-bold text-2xl shadow-inner">LP</div>
+                <h1 class="text-2xl font-semibold tracking-tight section-header">Luciano Paiva</h1>
+            </div>
+            <!-- Menu -->
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#hero" class="hover:text-[#c55c3a]">Início</a>
+                <a href="#case" class="hover:text-[#c55c3a]">Case Principal</a>
+                <a href="#resultados" class="hover:text-[#c55c3a]">Resultados</a>
+            </div>
+            <!-- Botões de Ação -->
+            <div class="flex items-center gap-x-4">
+                <!-- Botão Seguir (LinkedIn) -->
+                <a href="https://linkedin.com/in/luciano-paiva-b0b01a19b" target="_blank"
+                   class="flex items-center gap-x-2 bg-[#c55c3a] hover:bg-[#e07a5f] text-white px-6 py-3 rounded-3xl font-medium text-sm shadow-lg">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>Seguir</span>
+                </a>
+                <!-- Botão Compartilhar -->
+                <button onclick="sharePortfolio()"
+                        class="flex items-center gap-x-2 border border-[#b8a68e] hover:border-[#c55c3a] hover:text-[#c55c3a] px-6 py-3 rounded-3xl font-medium text-sm">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <span>Compartilhar</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="hero" class="hero-bg min-h-screen flex items-center pt-16">
+        <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <div class="inline-flex items-center gap-x-2 bg-white/70 px-5 py-2 rounded-3xl text-sm font-medium mb-6">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e07a5f] opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-[#c55c3a]"></span>
+                    </span>
+                    PORTFÓLIO 2026 • AO VIVO
+                </div>
+              
+                <h1 class="text-7xl md:text-8xl leading-none font-bold section-header tracking-tighter mb-4">
+                    Luciano Paiva
+                </h1>
+                <p class="text-4xl md:text-5xl text-[#c55c3a] font-light mb-8">Almoxarifado • Excel Avançado • Análise de Capacidade</p>
+              
+                <p class="max-w-lg text-xl text-[#5c4a3a] leading-relaxed mb-10">
+                    Transformo desorganização de estoque em controle estratégico com base em dados confiáveis.
+                    Atuação na estruturação de processos e indicadores de estoque, com foco em acuracidade, previsibilidade e suporte à tomada de decisão.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#case"
+                       class="flex items-center justify-center gap-x-3 bg-[#c55c3a] hover:bg-[#e07a5f] text-white text-lg px-10 py-6 rounded-3xl font-semibold shadow-xl hover:shadow-2xl">
+                        Ver o Case Completo
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                  
+                    <a href="https://linkedin.com/in/luciano-paiva-b0b01a19b" target="_blank"
+                       class="flex items-center justify-center gap-x-3 border-2 border-[#c55c3a] hover:bg-[#c55c3a] hover:text-white text-[#c55c3a] text-lg px-10 py-6 rounded-3xl font-semibold">
+                        <i class="fa-brands fa-linkedin text-2xl"></i>
+                        Conectar no LinkedIn
+                    </a>
+                </div>
+                <!-- Trust signals -->
+                <div class="mt-12 flex items-center gap-x-8 text-sm">
+                    <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-medal text-[#c55c3a]"></i>
+                        <span class="font-medium">+60% redução de atrasos</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-chart-line text-[#c55c3a]"></i>
+                        <span class="font-medium">Modelagem replicável de controle do almoxarifado</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-industry text-[#c55c3a]"></i>
+                        <span class="font-medium">Setor Público.</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Visual Hero Direito -->
+            <div class="md:col-span-5 relative">
+                <div class="absolute -top-8 -right-8 w-72 h-72 bg-[#e07a5f]/10 rounded-[4rem] rotate-12 blur-3xl"></div>
+                <div class="glass rounded-3xl p-8 shadow-2xl border border-[#e8d9c8]">
+                    <div class="bg-[#f4ede4] rounded-2xl p-6">
+                        <h3 class="text-[#c55c3a] font-medium mb-4 flex items-center gap-x-2">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            Insight Central
+                        </h3>
+                        <p class="text-2xl leading-tight font-light">
+                            “O problema não era "falta de controle".<br>
+                            Era <span class="font-semibold">falta de estrutura lógica dos dados.</span>.”
+                        </p>
+                        <div class="mt-8 flex justify-between text-xs uppercase tracking-widest text-[#b8a68e]">
+                            <div>Setor público</div>
+                            <div>Excel + BI</div>
+                            <div>Controle do almoxarifado.</div>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- Badge flutuante -->
+                <div class="absolute -bottom-4 -left-4 bg-white rounded-3xl px-6 py-3 shadow-xl flex items-center gap-x-3 text-sm font-medium">
+                    <span class="text-[#e07a5f]">Case em Destaque</span>
+                    <span class="px-3 py-1 bg-[#c55c3a] text-white rounded-2xl text-xs">Organização e Controle do almoxarifado</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <!-- Aviso Ético -->
+<p class="text-center text-[#5a0f1b] text-base mt-1 mb-2 max-w-2xl mx-auto flex items-center justify-center gap-2">
+    <i class="fa-solid fa-circle-info text-[#7a1c28]"></i>
+    Os dados utilizados neste projeto são simulados, garantindo conformidade com boas práticas de privacidade e confidencialidade.
+</p>
+
+    <!-- CASE PRINCIPAL -->
+    <section id="case" class="max-w-screen-2xl mx-auto px-8 py-24">
+        <div class="text-center mb-16">
+            <span class="px-6 py-2 bg-[#e07a5f]/10 text-[#c55c3a] text-sm font-medium rounded-3xl">
+                CASE DIDÁTICO • BASEADO EM CENÁRIO REAL
+            </span>
+            <h2 class="section-header text-6xl font-bold tracking-tighter mt-4">
+                Reestruturação do setor de almoxarifado. Com Controle de Consumo.
+            </h2>
+            <p class="text-[#5c4a3a] text-2xl mt-3 max-w-2xl mx-auto">
+                Transformação de caos operacional em previsibilidade total: um modelo replicável para qualquer indústria/setor.
+            </p>
+        </div>
+          
+        <!-- 1. Contexto, Diagnóstico, Solução e Resultados permanecem iguais -->
+        <div class="grid md:grid-cols-12 gap-6">
+            <!-- 1. Contexto -->
+            <div class="md:col-span-6 bg-white rounded-3xl p-10 shadow-sm border border-[#e8d9c8]">
+                <div class="flex items-center gap-x-4 mb-6">
+                    <div class="w-10 h-10 rounded-2xl bg-[#f4ede4] flex items-center justify-center text-[#c55c3a] text-xl">1</div>
+                    <h3 class="section-header text-3xl font-semibold">Contexto do problema</h3>
+                </div>
+                <div class="text-[#5c4a3a] space-y-6">
+                    <p class="text-lg">Durante o estágio no setor de almoxarifado, a operação apresentava um cenário comum em pequenas e médias estruturas:</p>
+                    <ul class="grid grid-cols-2 gap-4 text-base">
+                        <li class="flex gap-x-3"><i class="fa-solid fa-circle-dot text-[#e07a5f] mt-1"></i> Controle de estoque parcialmente manual</li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-circle-dot text-[#e07a5f] mt-1"></i> Baixa confiabilidade entre estoque físico vs. registros</li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-circle-dot text-[#e07a5f] mt-1"></i> Ausência de indicadores claros de consumo e reposição</li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-circle-dot text-[#e07a5f] mt-1"></i> Decisões de compra baseadas em percepção (não em dados)</li>
+                        <li class="flex gap-x-3"><i class="fa-solid fa-circle-dot text-[#e07a5f] mt-1"></i> Tempo elevado para localizar e separar materiais</li>
+                    </ul>
+                    <div class="pt-6 border-t border-[#e8d9c8]">
+                        <span class="text-[#c55c3a] font-medium">Situação crítica:</span>
+                        <div class="mt-4 flex flex-wrap gap-4">
+                            <div class="bg-[#f4ede4] px-5 py-3 rounded-2xl text-sm">Rupturas pontuais de estoque</div>
+                            <div class="bg-[#f4ede4] px-5 py-3 rounded-2xl text-sm">Excesso de itens de baixa rotatividade</div>
+                            <div class="bg-[#f4ede4] px-5 py-3 rounded-2xl text-sm">Retrabalho em conferências</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Diagnóstico -->
+            <div class="md:col-span-6 bg-white rounded-3xl p-10 shadow-sm border border-[#e8d9c8]">
+                <div class="flex items-center gap-x-4 mb-6">
+                    <div class="w-10 h-10 rounded-2xl bg-[#f4ede4] flex items-center justify-center text-[#c55c3a] text-xl">2</div>
+                    <h3 class="section-header text-3xl font-semibold">Entendimento do problema:</h3>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <p class="font-medium mb-3">Antes de construir qualquer planilha ou dashboard, o foco foi entender o problema estrutural:</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-x-3"><i class="fa-solid fa-question-circle text-[#e07a5f] mt-px"></i> Quais itens têm maior giro?</li>
+                            <li class="flex items-start gap-x-3"><i class="fa-solid fa-question-circle text-[#e07a5f] mt-px"></i> Onde estão as divergências entre físico e sistema?</li>
+                            <li class="flex items-start gap-x-3"><i class="fa-solid fa-question-circle text-[#e07a5f] mt-px"></i> Existe padrão de consumo por período?</li>
+                            <li class="flex items-start gap-x-3"><i class="fa-solid fa-question-circle text-[#e07a5f] mt-px"></i> Qual o tempo médio entre requisição e entrega?</li>
+                            <li class="flex items-start gap-x-3"><i class="fa-solid fa-question-circle text-[#e07a5f] mt-px"></i> Há estoque parado ocupando espaço e capital?</li>
+                        </ul>
+                    </div>
+                  
+                    <div class="pt-6 border-t">
+                        <p class="font-medium mb-3 text-[#c55c3a]">Principais lacunas identificadas</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 bg-[#f4ede4] text-[#5c4a3a] rounded-3xl text-sm">Falta de padronização no cadastro de materiais</span>
+                            <span class="px-4 py-2 bg-[#f4ede4] text-[#5c4a3a] rounded-3xl text-sm">Ausência de histórico estruturado de movimentações</span>
+                            <span class="px-4 py-2 bg-[#f4ede4] text-[#5c4a3a] rounded-3xl text-sm">Inexistência de classificação (ex: curva ABC)</span>
+                            <span class="px-4 py-2 bg-[#f4ede4] text-[#5c4a3a] rounded-3xl text-sm">Nenhum controle de estoque mínimo confiável</span>
+                            <span class="px-4 py-2 bg-[#f4ede4] text-[#5c4a3a] rounded-3xl text-sm">Dados descentralizados (planilhas isoladas)</span>
+                        </div>
+                    </div>
+                  
+                    <div class="bg-[#f4ede4] p-6 rounded-2xl border-l-4 border-[#c55c3a]">
+                        <p class="italic text-lg">Insight central:</p>
+                        <p class="text-2xl font-light leading-tight">O problema não era “falta de controle”, era falta de estrutura lógica dos dados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Solução Construída -->
+            <div id="solucao" class="md:col-span-12 bg-white rounded-3xl p-10 shadow-sm border border-[#e8d9c8]">
+                <div class="flex items-center gap-x-4 mb-8">
+                    <div class="w-10 h-10 rounded-2xl bg-[#f4ede4] flex items-center justify-center text-[#c55c3a] text-xl">3</div>
+                    <h3 class="section-header text-3xl font-semibold">Solução construída</h3>
+                </div>
+              
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div>
+                        <p class="uppercase text-xs font-medium text-[#b8a68e] mb-2">Arquitetura da solução (Excel / BI)</p>
+                        <p class="text-lg font-light">Base estruturada em 3 camadas:</p>
+                        <div class="mt-6 space-y-4">
+                            <div class="flex gap-x-4 items-start">
+                                <span class="font-mono text-[#c55c3a] text-xl">01</span>
+                                <div>
+                                    <span class="block font-semibold">Base de dados estruturada em 3 camadas:</span>
+                                    <span class="text-sm text-[#5c4a3a]">Cadastro de materiais, Código único, Descrição padronizada, Categoria,</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-4 items-start">
+                                <span class="font-mono text-[#c55c3a] text-xl">02</span>
+                                <div>
+                                    <span class="block font-semibold">Movimentações</span>
+                                    <span class="text-sm text-[#5c4a3a]">Data, Tipo (entrada/saída), Quantidade</span>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-4 items-start">
+                                <span class="font-mono text-[#c55c3a] text-xl">03</span>
+                                <div>
+                                    <span class="block font-semibold">Classificação ABC</span>
+                                    <span class="text-sm text-[#5c4a3a]">Lógica das métricas, Saldo atual de estoque, Consumo médio mensal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <!-- Gráfico interativo -->
+                    <div class="md:col-span-2 bg-[#f4ede4] rounded-3xl p-8">
+                        <div class="flex justify-between mb-6">
+                            <div>
+                                <span class="text-sm uppercase tracking-widest text-[#b8a68e]">Visualização em tempo real</span>
+                                <h4 class="text-2xl font-semibold">Estoque x Reposição</h4>
+                            </div>
+                            <button onclick="resetChart()" class="text-xs flex items-center gap-x-1 text-[#c55c3a]">
+                                <i class="fa-solid fa-rotate"></i> Resetar dados
+                            </button>
+                        </div>
+                        <canvas id="capacityChart" class="w-full h-40 md:h-48"></canvas>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-12 gap-6">
+                    <div class="md:col-span-4">
+                        <div class="text-sm font-medium uppercase mb-3">Lógica das métricas</div>
+                        <ul class="space-y-5 text-base">
+                            <li class="flex justify-between border-b pb-4"><span>Consumo médio</span><span class="font-mono text-[#c55c3a]">Previsão de reposição</span></li>
+                            <li class="flex justify-between border-b pb-4"><span>Material de reposição</span><span class="font-mono text-[#c55c3a]">Cotação orçamentária</span></li>
+                            <li class="flex justify-between border-b pb-4"><span>Tempo de entrega</span><span class="font-mono text-[#c55c3a]">Reduzido em 40%</span></li>
+                            <li class="flex justify-between"><span>Estoque mínimo</span><span class="font-mono text-[#c55c3a]">Ítens críticos</span></li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-8">
+                        <div class="text-sm font-medium uppercase mb-3">Diferencial técnico</div>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex-1 min-w-[240px] bg-white rounded-3xl p-6 shadow-inner">✔️ Separação clara entre ítens críticos e itens com baixa saída</div>
+                            <div class="flex-1 min-w-[240px] bg-white rounded-3xl p-6 shadow-inner">✔️ Reposição orientada por consumo, monitoramento contínuo</div>
+                            <div class="flex-1 min-w-[240px] bg-white rounded-3xl p-6 shadow-inner">✔️ Estrutura replicável para qualquer operação de estoque</div>
+                            <div class="flex-1 min-w-[240px] bg-white rounded-3xl p-6 shadow-inner">✔️ Gráficos dinâmicos + Curva ABC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Resultados e Aprendizado -->
+            <div id="resultados" class="md:col-span-12 bg-gradient-to-br from-[#c55c3a] to-[#e07a5f] text-white rounded-3xl p-10 shadow-sm">
+                <div class="flex items-center gap-x-4 mb-8">
+                    <div class="w-10 h-10 rounded-2xl bg-white/20 flex items-center justify-center text-white text-xl">4</div>
+                    <h3 class="section-header text-3xl font-semibold">Resultados e aprendizado</h3>
+                </div>
+              
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <p class="text-2xl font-light mb-8">O que passou a ser possível:</p>
+                        <div class="space-y-6">
+                            <div class="flex gap-x-6">
+                                <i class="fa-solid fa-check-circle text-4xl opacity-75"></i>
+                                <div>
+                                    <div class="font-semibold text-xl">Identificar rapidamente itens críticos</div>
+                                    <div class="text-white/80">reposição acelerada, evita o desabastecimento</div>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-6">
+                                <i class="fa-solid fa-check-circle text-4xl opacity-75"></i>
+                                <div>
+                                    <div class="font-semibold text-xl">Reduzir divergências de estoque</div>
+                                    <div class="text-white/80">ítens com identificação única não se misturam</div>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-6">
+                                <i class="fa-solid fa-check-circle text-4xl opacity-75"></i>
+                                <div>
+                                    <div class="font-semibold text-xl">Antecipar compras com base em consumo</div>
+                                    <div class="text-white/80">alto consumo = reposição contínua</div>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-6">
+                                <i class="fa-solid fa-check-circle text-4xl opacity-75"></i>
+                                <div>
+                                    <div class="font-semibold text-xl">Aumentar previsibilidade de reposição</div>
+                                    <div class="text-white/80">a cotação orçamentária direciona os custos</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-white">
+                        <p class="font-medium mb-6">Aprendizado técnico:</p>
+                        <ul class="space-y-6 text-lg">
+                            <li class="flex items-start gap-4"><span class="font-bold text-3xl text-white/40">01</span> Estrutura de dados bem definida resolve mais que dashboards complexos.</li>
+                            <li class="flex items-start gap-4"><span class="font-bold text-3xl text-white/40">02</span> A qualidade da decisão depende mais da modelagem do que da ferramenta.</li>
+                            <li class="flex items-start gap-4"><span class="font-bold text-3xl text-white/40">03</span> Processos simples, quando padronizados, geram alto impacto operacional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ DE CONTATOS -->
+    <footer class="bg-[#2c211b] text-[#f4ede4]">
+        <div class="max-w-screen-2xl mx-auto px-8 py-16">
+            <div class="grid md:grid-cols-12 gap-y-12">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-x-3 mb-6">
+                        <div class="w-9 h-9 rounded-2xl bg-[#c55c3a] flex items-center justify-center text-white font-bold text-3xl">LP</div>
+                        <span class="text-3xl font-semibold section-header">Luciano Paiva</span>
+                    </div>
+                    <p class="max-w-xs text-[#b8a68e]">Especialista em Planejamento e Controle da Produção com foco em dados, Excel e transformação operacional.</p>
+                  
+                    <a href="https://linkedin.com/in/luciano-paiva-b0b01a19b" target="_blank"
+                       class="floating-button md:hidden mt-8 inline-flex items-center gap-x-3 bg-[#c55c3a] text-white px-8 py-5 rounded-3xl text-lg font-medium shadow-2xl">
+                        <i class="fa-brands fa-linkedin text-3xl"></i>
+                        <span>Seguir no LinkedIn</span>
+                    </a>
+                </div>
+                <div class="md:col-span-7 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <a href="https://linkedin.com/in/luciano-paiva-b0b01a19b" target="_blank" class="group flex flex-col items-center justify-center bg-[#3a2f26] hover:bg-[#c55c3a] rounded-3xl py-8 text-center">
+                        <i class="fa-brands fa-linkedin text-5xl mb-3 group-hover:scale-110"></i>
+                        <span class="font-medium text-lg">LinkedIn</span>
+                        <span class="text-xs text-[#b8a68e] mt-1">Conectar</span>
+                    </a>
+                    <a href="https://github.com/lucianoadm" target="_blank" class="group flex flex-col items-center justify-center bg-[#3a2f26] hover:bg-[#c55c3a] rounded-3xl py-8 text-center">
+                        <i class="fa-brands fa-github text-5xl mb-3 group-hover:scale-110"></i>
+                        <span class="font-medium text-lg">GitHub</span>
+                        <span class="text-xs text-[#b8a68e] mt-1">Repositórios</span>
+                    </a>
+                    <a href="https://wa.me" target="_blank" class="group flex flex-col items-center justify-center bg-[#3a2f26] hover:bg-[#c55c3a] rounded-3xl py-8 text-center">
+                        <i class="fa-brands fa-whatsapp text-5xl mb-3 group-hover:scale-110"></i>
+                        <span class="font-medium text-lg">WhatsApp</span>
+                        <span class="text-xs text-[#b8a68e] mt-1">Fale comigo</span>
+                    </a>
+                    <a href="mailto:lucianopaivaadm@gmail.com" class="group flex flex-col items-center justify-center bg-[#3a2f26] hover:bg-[#c55c3a] rounded-3xl py-8 text-center">
+                        <i class="fa-solid fa-envelope text-5xl mb-3 group-hover:scale-110"></i>
+                        <span class="font-medium text-lg">E-mail</span>
+                        <span class="text-xs text-[#b8a68e] mt-1">lucianopaivaadm@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- LINHA INFERIOR COM O NOVO CONTADOR -->
+            <div class="border-t border-[#5c4a3a] mt-16 pt-8 text-center text-xs text-[#b8a68e] flex flex-col md:flex-row justify-between items-center gap-y-4">
+                <div>© 2026 Luciano Paiva • Todos os direitos reservados</div>
+                <div class="flex items-center gap-x-6 text-[#c55c3a]">
+                    <span>Feito com elegância e dados reais</span>
+                    <span class="h-px w-6 bg-[#c55c3a]"></span>
+                    <span>Ultra-moderno • Orgânico • Impactante</span>
+                </div>
+                
+                <!-- NOVO CONTADOR DE VISITAS -->
+                <div>
+                    <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Flucianoadm.github.io%2Fport_almox%2F&label=luciano-portfolio-almox&icon=github&color=%23198754&message=&style=flat&tz=UTC" 
+                         alt="Contador de visitas" 
+                         class="h-6 inline-block">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind initialization
+        function initializeTailwind() {
+            return {
+                config(userConfig = {}) {
+                    return {
+                        theme: {
+                            extend: {}
+                        },
+                        ...userConfig,
+                    }
+                },
+                theme: {
+                    extend: {}
+                }
+            }
+        }
+      
+        document.addEventListener('DOMContentLoaded', () => {
+            const config = initializeTailwind().config()
+            return window.tailwindConfig = () => config
+        })
+
+        // Compartilhar
+        function sharePortfolio() {
+            const url = window.location.href
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Portfólio Luciano Paiva',
+                    text: 'Confira este case incrível de PCP com Excel e Análise de Capacidade!',
+                    url: url
+                })
+            } else {
+                navigator.clipboard.writeText(url).then(() => {
+                    const btn = event.currentTarget
+                    const originalText = btn.innerHTML
+                    btn.innerHTML = `<i class="fa-solid fa-check"></i> Copiado!`
+                    setTimeout(() => btn.innerHTML = originalText, 2000)
+                })
+            }
+        }
+
+        // Gráfico Chart.js
+        let capacityChartInstance = null
+      
+        function createCapacityChart() {
+            const ctx = document.getElementById('capacityChart')
+            if (capacityChartInstance) capacityChartInstance.destroy()
+          
+            capacityChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Prod.A', 'Prod.B', 'Prod.C', 'Prod.D', 'Prod.E'],
+                    datasets: [
+                        {
+                            label: 'Estoque Atual',
+                            data: [34, 29, 51, 47, 53],
+                            backgroundColor: '#c55c3a',
+                            borderColor: '#c55c3a',
+                            borderWidth: 2,
+                            borderRadius: 8,
+                        },
+                        {
+                            label: 'Estoque em 10 dias',
+                            data: [26, 29, 43, 26, 18],
+                            backgroundColor: '#e07a5f',
+                            borderColor: '#e07a5f',
+                            borderWidth: 2,
+                            borderRadius: 8,
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    aspectRatio: 2.4,
+                    plugins: {
+                        legend: { position: 'top', labels: { color: '#2c211b', font: { size: 14 } } },
+                        tooltip: { backgroundColor: '#2c211b' }
+                    },
+                    scales: {
+                        y: {
+                            grid: { color: '#e8d9c8' },
+                            ticks: { color: '#5c4a3a', font: { size: 13 } }
+                        },
+                        x: {
+                            grid: { color: '#e8d9c8' },
+                            ticks: { color: '#5c4a3a', font: { size: 13 } }
+                        }
+                    }
+                }
+            })
+        }
+
+        function resetChart() {
+            if (capacityChartInstance) {
+                capacityChartInstance.data.datasets[0].data = [158, 112, 189, 84, 152]
+                capacityChartInstance.data.datasets[1].data = [180, 160, 140, 160, 180]
+                capacityChartInstance.update()
+            }
+        }
+
+        // Inicializar
+        window.onload = () => {
+            createCapacityChart()
+          
+            console.log('%c✅ Portfólio de Luciano Paiva carregado com sucesso. Ultra-moderno, interativo e visualmente impactante.', 'background:#c55c3a; color:#fff; padding:4px 8px; border-radius:9999px;')
+        }
+    </script>
+</body>
+</html>
